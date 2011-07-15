@@ -16,20 +16,17 @@ void Ball::Update(sf::RenderWindow& app, Paddle& player1, Paddle& player2)
 	}
 	
 	// paddle collision
-	if(collides(player1) || collides(player2))
+	if(collides(player1))
+	{
 		xSpeed *= -1;
-	
-	// scoring collision & event handling
-	if(X <= 0)
-	{
-		player2.Score();
-		ResetBall("Player 2", app);
+		while(collides(player1))
+			++X;
 	}
-	if(X + W >= screenWidth)
+	if(collides(player2))
 	{
-		player1.Score();
-		SetPosition(screenWidth / 2, screenHeight / 2);
-		ResetBall("Player 1", app);
+		xSpeed *= -1;
+		while(collides(player2))
+			--X;
 	}
 	
 	// adjust position

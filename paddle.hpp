@@ -11,5 +11,6 @@ public:
 	void Update(sf::RenderWindow& app);
 	void Draw(sf::RenderWindow& app);
 	void Score() { ++score; }
+	int getScore() { return score; }
 };
 #endif

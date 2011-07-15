@@ -31,8 +31,10 @@ void Game::init()
 
 void Game::run()
 {
+	bool running = true;
+	
 	// Start game loop
-    while (app.IsOpened())
+    while (app.IsOpened() && running)
     {
         // Process events
         while (app.GetEvent(eHandler))
@@ -41,7 +43,23 @@ void Game::run()
             if (eHandler.Type == sf::Event::Closed)
                 app.Close();
         }
-
+		
+		// scoring collision & event handling
+		if(ball.X <= 0)
+		{
+			player2.Score();
+			ball.ResetBall("Player 2", app);
+		}
+		if(ball.X + ball.W >= screenWidth)
+		{
+			player1.Score();
+			ball.ResetBall("Player 1", app);
+		}
+		
+		// check for win
+		if(player1.getScore() == 5 || player2.getScore() == 5)
+			running = false;
+		
 		update();
         draw();
     }	
