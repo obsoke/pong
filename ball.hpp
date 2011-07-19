@@ -15,7 +15,7 @@ public:
 		SetPosition(X, Y);
 		SetScale(W, H);
 	}
-	void ResetBall(std::string player, sf::RenderWindow& app);
+	void ResetBall();
 	void Update(sf::RenderWindow& app) { } // to appease compiler
 	void Update(sf::RenderWindow& app, Paddle& player1, Paddle& player2);
 	void Draw(sf::RenderWindow& app);

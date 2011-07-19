@@ -14,15 +14,14 @@ public:
 	void update();
 	void draw();
 private:
-	void init();
-	void wrap();
 	sf::RenderWindow app;
 	sf::Event eHandler;
 	sf::Image padImg;
 	sf::Image ballImg;
+	sf::String score1;
+	sf::String score2;
 	Paddle player1;
 	AI player2;
 	Ball ball;
-	
 };
 #endif

@@ -35,7 +35,7 @@ void Ball::Update(sf::RenderWindow& app, Paddle& player1, Paddle& player2)
 	SetPosition(X, Y);
 }
 
-void Ball::ResetBall(std::string player, sf::RenderWindow& app)
+void Ball::ResetBall()
 {
 	// hide ball & stop it
 	//toggleVisible();

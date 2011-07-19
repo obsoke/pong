@@ -1,5 +1,6 @@
 #include "config.hpp"
 #include "game.hpp"
+#include "toolbox.hpp"
 
 Game::Game() :
 	app(sf::VideoMode(screenWidth, screenHeight), name),
@@ -7,36 +8,35 @@ Game::Game() :
 	player1(16, 200, 16, 100, 225, true),
 	player2(screenWidth - 16 * 2, 200, 16, 100, 225, true, ball)
 {
-	init();
+	// set sprites colour
+	ball.SetColor(sf::Color(255,0,0,255));
+	player1.SetColor(sf::Color(0,255,0,255));
+	player2.SetColor(sf::Color(0,255,0,255));
+
+	// set strings
+	score1.SetText(Toolbox::itos(player1.getScore()));
+	score1.SetPosition(5, 0);
+	score2.SetText(Toolbox::itos(player2.getScore()));
+	score2.SetPosition(screenWidth - 20, 0);
+	 
+	// misc app stuff
+	app.UseVerticalSync(true);
+	app.SetFramerateLimit(60);
 }
 
 Game::~Game()
 {
-	wrap();
-}
-
-void Game::init()
-{
-	if(!padImg.LoadFromFile("paddle.png"))
-		return;
-	if(!ballImg.LoadFromFile("ball.png"))
-		return;
-	player1.SetImage(padImg);
-	player2.SetImage(padImg);
-	ball.SetImage(ballImg);
-	
-	app.UseVerticalSync(true);
-	app.SetFramerateLimit(60);
+	// destructor stuff
 }
 
 void Game::run()
 {
 	bool running = true;
 	
-	// Start game loop
+	// game loop
     while (app.IsOpened() && running)
     {
-        // Process events
+        // process special events
         while (app.GetEvent(eHandler))
         {
             // Close window : exit
@@ -48,26 +48,23 @@ void Game::run()
 		if(ball.X <= 0)
 		{
 			player2.Score();
-			ball.ResetBall("Player 2", app);
+			ball.ResetBall();
+			score2.SetText(Toolbox::itos(player2.getScore()));
 		}
 		if(ball.X + ball.W >= screenWidth)
 		{
 			player1.Score();
-			ball.ResetBall("Player 1", app);
+			ball.ResetBall();
+			score1.SetText(Toolbox::itos(player1.getScore()));
 		}
 		
 		// check for win
 		if(player1.getScore() == 5 || player2.getScore() == 5)
 			running = false;
-		
+			
 		update();
         draw();
     }	
-}
-
-void Game::wrap()
-{
-	// do wrapping stuff here
 }
 
 void Game::update()
@@ -83,5 +80,7 @@ void Game::draw()
 	player1.Draw(app);
 	player2.Draw(app);
 	ball.Draw(app);
+	app.Draw(score1);
+	app.Draw(score2);
 	app.Display();
 }
