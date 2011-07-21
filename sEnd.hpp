@@ -1,5 +1,6 @@
 #ifndef SEND_HPP
 #define SEND_HPP
+
 #include "sEnd.hpp"
 #include "state.hpp"
 #include <SFML/Graphics.hpp>
@@ -17,4 +18,5 @@ public:
     void Draw();
 	void Update();
 };
+
 #endif

@@ -1,5 +1,6 @@
 #ifndef STITLE_HPP
 #define STITLE_HPP
+
 #include <SFML/Graphics.hpp>
 #include "State.hpp"
 

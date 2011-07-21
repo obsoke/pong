@@ -1,7 +1,6 @@
 #ifndef TOOLBOX_HPP
 #define TOOLBOX_HPP
 
-// includes
 #include <sstream>
 
 namespace Toolbox
@@ -13,4 +12,5 @@ namespace Toolbox
 		return str.str();
 	}	
 }
+
 #endif

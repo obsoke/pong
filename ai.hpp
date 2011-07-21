@@ -1,5 +1,6 @@
 #ifndef AI_HPP
 #define AI_HPP
+
 #include "paddle.hpp"
 #include "ball.hpp"
 
@@ -14,4 +15,5 @@ public:
 private:
 	Ball& ball;
 };
+
 #endif

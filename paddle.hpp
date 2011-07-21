@@ -1,5 +1,6 @@
 #ifndef PADDLE_HPP
 #define PADDLE_HPP
+
 #include "entity.hpp"
 
 class Paddle : public Entity {
@@ -13,4 +14,5 @@ public:
 	void Score() { ++score; }
 	int getScore() { return score; }
 };
+
 #endif

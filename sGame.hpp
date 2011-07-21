@@ -1,5 +1,6 @@
 #ifndef SGAME_HPP
 #define SGAME_HPP
+
 #include <SFML/Graphics.hpp>
 #include "State.hpp"
 #include "paddle.hpp"
@@ -19,4 +20,5 @@ private:
 	AI player2;
 	Ball ball;	
 };
+
 #endif

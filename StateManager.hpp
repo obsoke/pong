@@ -1,5 +1,6 @@
 #ifndef STATEMANAGER_HPP
 #define STATEMANAGER_HPP
+
 #include "state.hpp"
 #include <vector>
 
@@ -29,4 +30,5 @@ private:
 	static StateManager* instance_;
 	State* current;
 };
+
 #endif

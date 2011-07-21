@@ -1,5 +1,6 @@
 #ifndef ENTITY_HPP
 #define ENTITY_HPP
+
 #include <SFML/Graphics.hpp>
 
 class Entity : public sf::Sprite {
@@ -44,5 +45,6 @@ private:
 	Entity(); // no use of default constructor allowed
 	bool visible;
 };
+
 #endif
 

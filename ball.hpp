@@ -1,5 +1,6 @@
 #ifndef BALL_HPP
 #define BALL_HPP
+
 #include "entity.hpp"
 #include "paddle.hpp"
 
@@ -20,4 +21,5 @@ public:
 	void Update(sf::RenderWindow& app, Paddle& player1, Paddle& player2);
 	void Draw(sf::RenderWindow& app);
 };
+
 #endif
