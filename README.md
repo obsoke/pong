@@ -18,3 +18,7 @@ To Do
 --------
 * Add sound effects and music
 * Code clean-up and organization
+
+License
+--------
+There is no licence! Use this code however you wish.
