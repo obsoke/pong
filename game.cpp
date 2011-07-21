@@ -23,8 +23,10 @@ Game::~Game()
 
 void Game::run()
 {	
-	// game loop
-    while (app.IsOpened())
+    bool running = true;
+	
+    // game loop
+    while (app.IsOpened() && running)
     {
         // process special events
         while (app.GetEvent(eHandler))
@@ -33,7 +35,15 @@ void Game::run()
             if (eHandler.Type == sf::Event::Closed)
                 app.Close();
         }
-		StateManager::Instance().getCurrentState()->Update();
-		StateManager::Instance().getCurrentState()->Draw();
+        
+        if(StateManager::Instance().getCurrentState())
+        {
+            StateManager::Instance().getCurrentState()->Update();
+            if(StateManager::Instance().getCurrentState())
+            {
+                StateManager::Instance().getCurrentState()->Draw();   
+            }
+        }
+        else running = false;
 	}	
 }

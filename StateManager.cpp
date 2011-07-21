@@ -16,7 +16,7 @@ void StateManager::removeState(State* s)
 {
 	std::vector<State*>::iterator it;
 	for (it = states.begin(); it < states.end(); ++it) {
-		
+		if (*it == s) delete *it;
 	}
 }
 
@@ -25,10 +25,16 @@ State* StateManager::getCurrentState()
 	return current;
 }
 
+void StateManager::end()
+{
+    current = 0;
+}
+
 void StateManager::clearAll()
 {
 	std::vector<State*>::iterator it;
 	for (it = states.begin(); it < states.end(); ++it) {
 		delete *it;
 	}
+    current = 0;
 }

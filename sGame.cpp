@@ -1,4 +1,6 @@
 #include "sGame.hpp"
+#include "sEnd.hpp"
+#include "StateManager.hpp"
 #include "toolbox.hpp"
 #include "config.hpp"
 
@@ -49,6 +51,16 @@ void sGame::Update()
 		ball.ResetBall();
 		score1.SetText(Toolbox::itos(player1.getScore()));
 	}
+    
+    // check for winner
+    if(player1.getScore() == winNumber)
+    {
+        StateManager::Instance().addState(new sEnd(app, 0));
+    }
+    else if(player2.getScore() == winNumber)
+    {
+        StateManager::Instance().addState(new sEnd(app, 1));
+    }
 	
 	player1.Update(app);
 	player2.Update(app);

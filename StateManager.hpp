@@ -21,6 +21,7 @@ public:
 	void removeState(int index);
 	void removeState(State* s);
 	void clearAll();
+    void end();
 	State* getCurrentState();
 	std::vector<State*> states;
 private:

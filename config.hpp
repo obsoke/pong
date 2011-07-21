@@ -5,6 +5,6 @@
 // global variables
 static const int screenWidth = 800;
 static const int screenHeight = 600;
-static std::string name = "Pong";
-
+static const std::string name = "Pong";
+static const int winNumber = 5;
 #endif
