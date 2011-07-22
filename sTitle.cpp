@@ -9,6 +9,7 @@ sTitle::sTitle(sf::RenderWindow& app) :
 	if (!MyFont.LoadFromFile("PressStart2P.ttf"))
 		return;
 	
+    // title set up
 	title.SetText("PONG");
 	title.SetFont(MyFont);
 	title.SetSize(50);
@@ -43,6 +44,7 @@ void sTitle::Draw()
 
 void sTitle::Update()
 {
+    // check for player input to start game
 	if(app.GetInput().IsKeyDown(sf::Key::Return))
 		StateManager::Instance().addState(new sGame(app));
 

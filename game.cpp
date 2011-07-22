@@ -36,14 +36,19 @@ void Game::run()
                 app.Close();
         }
         
+        // only perform update/draw if a state exists
         if(StateManager::Instance().getCurrentState())
         {
             StateManager::Instance().getCurrentState()->Update();
+            
+            // only perform draw if a state exists after last update
             if(StateManager::Instance().getCurrentState())
             {
                 StateManager::Instance().getCurrentState()->Draw();   
             }
         }
+        
+        // if no state, end game
         else running = false;
 	}	
 }

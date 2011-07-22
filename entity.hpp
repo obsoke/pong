@@ -5,25 +5,18 @@
 
 class Entity : public sf::Sprite {
 public:
-	// properties
 	float X;
 	float Y;
 	float W;
 	float H;
 	
-	// constructor
-	Entity(float x, float y, float w, float h, bool vis)
-	{
-		X = x;
-		Y = y;
-		W = w;
-		H = h;
-		visible = vis;
-	}
+	Entity(float x, float y, float w, float h, bool vis) :
+        X(x), Y(y), W(w), H(h), visible(vis)
+	{}
 	
-	// methods
 	virtual void Update(sf::RenderWindow& app) = 0;
 	virtual void Draw(sf::RenderWindow& app) = 0;
+    
 	bool collides(Entity& other)
 	{
 		if (&other==this) return false; // just in case.
@@ -33,10 +26,12 @@ public:
 	{
 		return sf::FloatRect(X, Y, X + W, Y + H);
 	}
+    
 	bool isVisible()
 	{
 		return visible;
 	}
+    
 	void toggleVisible()
 	{
 		visible = !visible;

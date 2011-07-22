@@ -1,12 +1,11 @@
 #ifndef STATE_HPP
 #define STATE_HPP
 
-// forward declaration
-namespace sf {
+namespace sf 
+{
 	class RenderWindow;
 }
 
-// State class
 class State
 {
 protected:

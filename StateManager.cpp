@@ -10,10 +10,12 @@ void StateManager::addState(State* s)
 }
 void StateManager::removeState(int index)
 {
+    // TO DO
 }
 
 void StateManager::removeState(State* s)
 {
+    // TO DO: does this actually work?
 	std::vector<State*>::iterator it;
 	for (it = states.begin(); it < states.end(); ++it) {
 		if (*it == s) delete *it;

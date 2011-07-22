@@ -37,19 +37,9 @@ void Ball::Update(sf::RenderWindow& app, Paddle& player1, Paddle& player2)
 
 void Ball::ResetBall()
 {
-	// hide ball & stop it
-	//toggleVisible();
-	float tX = xSpeed;
-	float tY = ySpeed;
-	xSpeed = ySpeed = 0;
-	 
-	// display message for 5 seconds
-	//sf::Sleep(5);
-	// display ball countdown and then resume game
+    // TO DO: make this better... right now its lame
 	X = screenWidth / 2;
 	Y = screenHeight / 2;
-	xSpeed = tX;
-	ySpeed = tY;
 }
 
 void Ball::Draw(sf::RenderWindow& app)

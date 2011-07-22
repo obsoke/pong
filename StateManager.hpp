@@ -7,6 +7,7 @@
 class StateManager
 {
 public:
+    // turns class into singleton
 	static StateManager& Instance()
 	{
 		// lazy initialization

@@ -35,8 +35,6 @@ sEnd::sEnd(sf::RenderWindow& app, int win) :
     congrats.SetFont(MyFont);
     winner.SetFont(MyFont);
     playAgain.SetFont(MyFont);
-    
-
 }
 sEnd::~sEnd()
 {
@@ -52,7 +50,7 @@ void sEnd::Draw()
 }
 void sEnd::Update()
 {
-    // check whether to start new game or end
+    // check whether to start new game or end based on player input
     if(app.GetInput().IsKeyDown(sf::Key::Y))
     {
         StateManager::Instance().addState(new sGame(app));
