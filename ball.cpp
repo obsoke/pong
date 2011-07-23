@@ -1,6 +1,21 @@
 #include "ball.hpp"
 #include "config.hpp"
 
+Ball::Ball(float x, float y, float w, float h, float xS, float yS, bool vis) :
+    Entity(x, y, w, h, vis),
+    xSpeed(xS), ySpeed(yS)
+{
+    SetPosition(X, Y);
+    SetScale(W, H);
+    
+    // load audio
+    if(!wallHit.LoadFromFile("wallHit.wav"))
+        return;
+    
+    if(!paddleHit.LoadFromFile("paddleHit.wav"))
+        return;
+}
+
 void Ball::Update(sf::RenderWindow& app, Paddle& player1, Paddle& player2)
 {
 	// wall collision
@@ -8,11 +23,15 @@ void Ball::Update(sf::RenderWindow& app, Paddle& player1, Paddle& player2)
 	{
 		ySpeed *= -1;
 		Y = 0;
+        hit.SetBuffer(wallHit);
+        hit.Play();
 	}
 	if(Y + H >= screenHeight)
 	{
 		ySpeed *= -1;
 		Y = screenHeight - H;
+        hit.SetBuffer(wallHit);
+        hit.Play();
 	}
 	
 	// paddle collision
@@ -21,12 +40,16 @@ void Ball::Update(sf::RenderWindow& app, Paddle& player1, Paddle& player2)
 		xSpeed *= -1;
 		while(collides(player1))
 			++X;
+        hit.SetBuffer(paddleHit);
+        hit.Play();
 	}
 	if(collides(player2))
 	{
 		xSpeed *= -1;
 		while(collides(player2))
 			--X;
+        hit.SetBuffer(paddleHit);
+        hit.Play();
 	}
 	
 	// adjust position

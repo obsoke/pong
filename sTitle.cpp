@@ -7,7 +7,7 @@ sTitle::sTitle(sf::RenderWindow& app) :
 	State(app)
 {
 	if (!MyFont.LoadFromFile("PressStart2P.ttf"))
-		return;
+        return;
 	
     // title set up
 	title.SetText("PONG");

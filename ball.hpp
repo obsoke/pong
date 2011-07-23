@@ -3,19 +3,18 @@
 
 #include "entity.hpp"
 #include "paddle.hpp"
+#include <SFML/Audio.hpp>
 
 class Ball : public Entity {
 private:
 	float xSpeed;
 	float ySpeed;
+    sf::Sound hit;
+    sf::SoundBuffer wallHit;
+    sf::SoundBuffer paddleHit;
+    
 public:
-	Ball(float x, float y, float w, float h, float xS, float yS, bool vis) :
-		Entity(x, y, w, h, vis),
-		xSpeed(xS), ySpeed(yS)
-	{
-		SetPosition(X, Y);
-		SetScale(W, H);
-	}
+	Ball(float x, float y, float w, float h, float xS, float yS, bool vis);
 	void ResetBall();
 	void Update(sf::RenderWindow& app) { } // to appease compiler
 	void Update(sf::RenderWindow& app, Paddle& player1, Paddle& player2);

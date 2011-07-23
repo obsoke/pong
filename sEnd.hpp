@@ -1,9 +1,9 @@
 #ifndef SEND_HPP
 #define SEND_HPP
 
+#include <SFML/Graphics.hpp>
 #include "sEnd.hpp"
 #include "state.hpp"
-#include <SFML/Graphics.hpp>
 
 class sEnd : public State {
 private:
