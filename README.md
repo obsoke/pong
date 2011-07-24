@@ -12,7 +12,7 @@ Requirements
 
 Usage
 ---------
-The included font, 'PressStart2P.ttf', must be in the same folder as your executable for the program to work correctly.
+The included resource files (PressStart2P.ttf, paddleHit.wav, wallHit.wav) must be in the same folder as your executable for the program to work correctly.
 
 To Do
 --------
