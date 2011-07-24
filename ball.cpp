@@ -58,11 +58,31 @@ void Ball::Update(sf::RenderWindow& app, Paddle& player1, Paddle& player2)
 	SetPosition(X, Y);
 }
 
-void Ball::ResetBall()
+void Ball::ResetBall(int spawn)
 {
-    // TO DO: make this better... right now its lame
-	X = screenWidth / 2;
-	Y = screenHeight / 2;
+    // if spawn == 0, Player scored; spawn ball on AI side
+    if(spawn == 0)
+    {
+        X = (screenWidth - 16 * 2) - 1; // so the ball doesn't bounce backwards back into one's goal
+        xSpeed *= -1; // change direction of ball
+    }
+    // if spawn == 1, AI scored; spawn ball on Player side
+    else
+    {
+        X = (0 + 16 * 2) + 1;
+        xSpeed *= -1;
+    }
+    
+    // randomize whether from top or bottom
+    int randNum = rand() % 2;
+    if(randNum == 0)
+    {
+        Y = (screenHeight - 16 * 2) - 15;
+    }
+    else
+    {
+        Y = (16 * 2) + 15;
+    }
 }
 
 void Ball::Draw(sf::RenderWindow& app)

@@ -47,13 +47,13 @@ void sGame::Update()
 	if(ball.X <= 0)
 	{
 		player2.Score();
-		ball.ResetBall();
+		ball.ResetBall(1);
 		score2.SetText(Toolbox::itos(player2.getScore()));
 	}
 	if(ball.X + ball.W >= screenWidth)
 	{
 		player1.Score();
-		ball.ResetBall();
+		ball.ResetBall(0);
 		score1.SetText(Toolbox::itos(player1.getScore()));
 	}
     

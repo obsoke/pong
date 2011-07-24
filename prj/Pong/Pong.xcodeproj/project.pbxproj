@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DA8614713DC984100CE74F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA8614613DC984100CE74F8 /* Foundation.framework */; };
+		2DA8614A13DC984100CE74F8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA8614913DC984100CE74F8 /* main.cpp */; };
+		2DA8614C13DC984100CE74F8 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2DA8614B13DC984100CE74F8 /* ResourcePath.mm */; };
+		2DA8614E13DC984100CE74F8 /* ResourcePath.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 2DA8614D13DC984100CE74F8 /* ResourcePath.hpp */; };
+		2DA8615113DC984100CE74F8 /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DA8615013DC984100CE74F8 /* sansation.ttf */; };
+		2DA8615313DC984100CE74F8 /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2DA8615213DC984100CE74F8 /* cute_image.jpg */; };
+		2DA8615513DC984100CE74F8 /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 2DA8615413DC984100CE74F8 /* nice_music.ogg */; };
+		2DA8615913DC984100CE74F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DA8615713DC984100CE74F8 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2DA8614213DC984100CE74F8 /* Pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pong.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA8614613DC984100CE74F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2DA8614913DC984100CE74F8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2DA8614B13DC984100CE74F8 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
+		2DA8614D13DC984100CE74F8 /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
+		2DA8615013DC984100CE74F8 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
+		2DA8615213DC984100CE74F8 /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cute_image.jpg; sourceTree = "<group>"; };
+		2DA8615413DC984100CE74F8 /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
+		2DA8615613DC984100CE74F8 /* Pong-Info.plist */ = {isa = PBXFileReference; path = "Pong-Info.plist"; sourceTree = "<group>"; };
+		2DA8615813DC984100CE74F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DA8613F13DC984100CE74F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA8614713DC984100CE74F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DA8613713DC984100CE74F8 = {
+			isa = PBXGroup;
+			children = (
+				2DA8614813DC984100CE74F8 /* Pong */,
+				2DA8614513DC984100CE74F8 /* Frameworks */,
+				2DA8614313DC984100CE74F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DA8614313DC984100CE74F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DA8614213DC984100CE74F8 /* Pong.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DA8614513DC984100CE74F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DA8614613DC984100CE74F8 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2DA8614813DC984100CE74F8 /* Pong */ = {
+			isa = PBXGroup;
+			children = (
+				2DA8614913DC984100CE74F8 /* main.cpp */,
+				2DA8614B13DC984100CE74F8 /* ResourcePath.mm */,
+				2DA8614D13DC984100CE74F8 /* ResourcePath.hpp */,
+				2DA8614F13DC984100CE74F8 /* Supporting Files */,
+			);
+			path = Pong;
+			sourceTree = "<group>";
+		};
+		2DA8614F13DC984100CE74F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DA8615013DC984100CE74F8 /* sansation.ttf */,
+				2DA8615213DC984100CE74F8 /* cute_image.jpg */,
+				2DA8615413DC984100CE74F8 /* nice_music.ogg */,
+				2DA8615613DC984100CE74F8 /* Pong-Info.plist */,
+				2DA8615713DC984100CE74F8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DA8614113DC984100CE74F8 /* Pong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA8615C13DC984100CE74F8 /* Build configuration list for PBXNativeTarget "Pong" */;
+			buildPhases = (
+				2DA8613E13DC984100CE74F8 /* Sources */,
+				2DA8613F13DC984100CE74F8 /* Frameworks */,
+				2DA8614013DC984100CE74F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pong;
+			productName = Pong;
+			productReference = 2DA8614213DC984100CE74F8 /* Pong.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DA8613913DC984100CE74F8 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2DA8613C13DC984100CE74F8 /* Build configuration list for PBXProject "Pong" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2DA8613713DC984100CE74F8;
+			productRefGroup = 2DA8614313DC984100CE74F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DA8614113DC984100CE74F8 /* Pong */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DA8614013DC984100CE74F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA8614E13DC984100CE74F8 /* ResourcePath.hpp in Resources */,
+				2DA8615113DC984100CE74F8 /* sansation.ttf in Resources */,
+				2DA8615313DC984100CE74F8 /* cute_image.jpg in Resources */,
+				2DA8615513DC984100CE74F8 /* nice_music.ogg in Resources */,
+				2DA8615913DC984100CE74F8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DA8613E13DC984100CE74F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA8614A13DC984100CE74F8 /* main.cpp in Sources */,
+				2DA8614C13DC984100CE74F8 /* ResourcePath.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2DA8615713DC984100CE74F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DA8615813DC984100CE74F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DA8615A13DC984100CE74F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				AUDIO_DEBUG = "-lsfml-audio-d";
+				AUDIO_RELEASE = "-lsfml-audio";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GRAPHICS_DEBUG = "-lsfml-graphics-d";
+				GRAPHICS_RELEASE = "-lsfml-graphics";
+				HEADER_SEARCH_PATHS = (
+					"$(HEADER_SEARCH_PATHS)",
+					/usr/local/include/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				NETWORK_DEBUG = "";
+				NETWORK_RELEASE = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"$(SYSTEM_DEBUG)",
+					"$(WINDOW_DEBUG)",
+					"$(GRAPHICS_DEBUG)",
+					"$(AUDIO_DEBUG)",
+					"$(NETWORK_DEBUG)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SYSTEM_DEBUG = "-lsfml-system-d";
+				SYSTEM_RELEASE = "-lsfml-system";
+				WINDOW_DEBUG = "-lsfml-window-d";
+				WINDOW_RELEASE = "-lsfml-window";
+			};
+			name = Debug;
+		};
+		2DA8615B13DC984100CE74F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				AUDIO_DEBUG = "-lsfml-audio-d";
+				AUDIO_RELEASE = "-lsfml-audio";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GRAPHICS_DEBUG = "-lsfml-graphics-d";
+				GRAPHICS_RELEASE = "-lsfml-graphics";
+				HEADER_SEARCH_PATHS = (
+					"$(HEADER_SEARCH_PATHS)",
+					/usr/local/include/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				NETWORK_DEBUG = "";
+				NETWORK_RELEASE = "";
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"$(SYSTEM_RELEASE)",
+					"$(WINDOW_RELEASE)",
+					"$(GRAPHICS_RELEASE)",
+					"$(AUDIO_RELEASE)",
+					"$(NETWORK_RELEASE)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SYSTEM_DEBUG = "-lsfml-system-d";
+				SYSTEM_RELEASE = "-lsfml-system";
+				WINDOW_DEBUG = "-lsfml-window-d";
+				WINDOW_RELEASE = "-lsfml-window";
+			};
+			name = Release;
+		};
+		2DA8615D13DC984100CE74F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pong/Pong-Prefix.pch";
+				INFOPLIST_FILE = "Pong/Pong-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2DA8615E13DC984100CE74F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pong/Pong-Prefix.pch";
+				INFOPLIST_FILE = "Pong/Pong-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DA8613C13DC984100CE74F8 /* Build configuration list for PBXProject "Pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA8615A13DC984100CE74F8 /* Debug */,
+				2DA8615B13DC984100CE74F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DA8615C13DC984100CE74F8 /* Build configuration list for PBXNativeTarget "Pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA8615D13DC984100CE74F8 /* Debug */,
+				2DA8615E13DC984100CE74F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DA8613913DC984100CE74F8 /* Project object */;
+}

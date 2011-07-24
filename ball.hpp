@@ -15,7 +15,7 @@ private:
     
 public:
 	Ball(float x, float y, float w, float h, float xS, float yS, bool vis);
-	void ResetBall();
+	void ResetBall(int spawn);
 	void Update(sf::RenderWindow& app) { } // to appease compiler
 	void Update(sf::RenderWindow& app, Paddle& player1, Paddle& player2);
 	void Draw(sf::RenderWindow& app);
