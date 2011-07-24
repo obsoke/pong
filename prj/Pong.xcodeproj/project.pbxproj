@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D64394313DBC61000AC0D8C /* paddleHit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2D64394213DBC61000AC0D8C /* paddleHit.wav */; };
+		2D64394713DBC63400AC0D8C /* PressStart2P.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D64394513DBC63400AC0D8C /* PressStart2P.ttf */; };
+		2D64394813DBC63400AC0D8C /* wallHit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2D64394613DBC63400AC0D8C /* wallHit.wav */; };
+		2D64394B13DBC65A00AC0D8C /* sfml-audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D64394913DBC65A00AC0D8C /* sfml-audio.framework */; };
+		2D64394C13DBC65A00AC0D8C /* sndfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D64394A13DBC65A00AC0D8C /* sndfile.framework */; };
+		2D692E8813D86F79003D902B /* sEnd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D692E8713D86F79003D902B /* sEnd.cpp */; };
+		2DA28A1D13DBAD0400797E58 /* wiki_reasonably_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DA28A1C13DBAD0400797E58 /* wiki_reasonably_small.png */; };
+		2DC9C00B13D7D5270034F4C4 /* sGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DC9C00313D7D5270034F4C4 /* sGame.cpp */; };
+		2DC9C00C13D7D5270034F4C4 /* StateManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DC9C00613D7D5270034F4C4 /* StateManager.cpp */; };
+		2DC9C00D13D7D5270034F4C4 /* sTitle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DC9C00813D7D5270034F4C4 /* sTitle.cpp */; };
+		2DC9C01A13D7D5330034F4C4 /* ai.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DC9C00E13D7D5330034F4C4 /* ai.cpp */; };
+		2DC9C01B13D7D5330034F4C4 /* ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DC9C01013D7D5330034F4C4 /* ball.cpp */; };
+		2DC9C01D13D7D5330034F4C4 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DC9C01513D7D5330034F4C4 /* game.cpp */; };
+		2DC9C01E13D7D5330034F4C4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DC9C01713D7D5330034F4C4 /* main.cpp */; };
+		2DC9C01F13D7D5330034F4C4 /* paddle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DC9C01813D7D5330034F4C4 /* paddle.cpp */; };
+		A0072ADE0F1D0EC500B4A594 /* sfml-system.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A01FB6CB0F07CFF2000AAC7B /* sfml-system.framework */; };
+		A0072ADF0F1D0EC500B4A594 /* sfml-window.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A01FB6CC0F07CFF2000AAC7B /* sfml-window.framework */; };
+		A0072AE00F1D0EC500B4A594 /* sfml-graphics.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A01FB6CA0F07CFF2000AAC7B /* sfml-graphics.framework */; };
+		A01FB6CE0F07CFF2000AAC7B /* sfml-graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01FB6CA0F07CFF2000AAC7B /* sfml-graphics.framework */; };
+		A01FB6CF0F07CFF2000AAC7B /* sfml-system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01FB6CB0F07CFF2000AAC7B /* sfml-system.framework */; };
+		A01FB6D00F07CFF2000AAC7B /* sfml-window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01FB6CC0F07CFF2000AAC7B /* sfml-window.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A0072AF00F1D0EDD00B4A594 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A0072ADE0F1D0EC500B4A594 /* sfml-system.framework in Copy Frameworks */,
+				A0072ADF0F1D0EC500B4A594 /* sfml-window.framework in Copy Frameworks */,
+				A0072AE00F1D0EC500B4A594 /* sfml-graphics.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2D64394213DBC61000AC0D8C /* paddleHit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = paddleHit.wav; sourceTree = "<group>"; };
+		2D64394513DBC63400AC0D8C /* PressStart2P.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PressStart2P.ttf; sourceTree = "<group>"; };
+		2D64394613DBC63400AC0D8C /* wallHit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wallHit.wav; sourceTree = "<group>"; };
+		2D64394913DBC65A00AC0D8C /* sfml-audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "sfml-audio.framework"; sourceTree = "<group>"; };
+		2D64394A13DBC65A00AC0D8C /* sndfile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = sndfile.framework; sourceTree = "<group>"; };
+		2D692E8713D86F79003D902B /* sEnd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sEnd.cpp; path = ../sEnd.cpp; sourceTree = "<group>"; };
+		2D692E8A13D86F8E003D902B /* sEnd.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = sEnd.hpp; path = ../sEnd.hpp; sourceTree = "<group>"; };
+		2DA28A1C13DBAD0400797E58 /* wiki_reasonably_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wiki_reasonably_small.png; sourceTree = "<group>"; };
+		2DC9C00313D7D5270034F4C4 /* sGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sGame.cpp; path = ../sGame.cpp; sourceTree = "<group>"; };
+		2DC9C00413D7D5270034F4C4 /* sGame.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = sGame.hpp; path = ../sGame.hpp; sourceTree = "<group>"; };
+		2DC9C00513D7D5270034F4C4 /* state.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = state.hpp; path = ../state.hpp; sourceTree = "<group>"; };
+		2DC9C00613D7D5270034F4C4 /* StateManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StateManager.cpp; path = ../StateManager.cpp; sourceTree = "<group>"; };
+		2DC9C00713D7D5270034F4C4 /* StateManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = StateManager.hpp; path = ../StateManager.hpp; sourceTree = "<group>"; };
+		2DC9C00813D7D5270034F4C4 /* sTitle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sTitle.cpp; path = ../sTitle.cpp; sourceTree = "<group>"; };
+		2DC9C00913D7D5270034F4C4 /* sTitle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = sTitle.hpp; path = ../sTitle.hpp; sourceTree = "<group>"; };
+		2DC9C00A13D7D5270034F4C4 /* toolbox.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = toolbox.hpp; path = ../toolbox.hpp; sourceTree = "<group>"; };
+		2DC9C00E13D7D5330034F4C4 /* ai.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ai.cpp; path = ../ai.cpp; sourceTree = "<group>"; };
+		2DC9C00F13D7D5330034F4C4 /* ai.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ai.hpp; path = ../ai.hpp; sourceTree = "<group>"; };
+		2DC9C01013D7D5330034F4C4 /* ball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ball.cpp; path = ../ball.cpp; sourceTree = "<group>"; };
+		2DC9C01113D7D5330034F4C4 /* ball.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ball.hpp; path = ../ball.hpp; sourceTree = "<group>"; };
+		2DC9C01213D7D5330034F4C4 /* config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = config.hpp; path = ../config.hpp; sourceTree = "<group>"; };
+		2DC9C01413D7D5330034F4C4 /* entity.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = entity.hpp; path = ../entity.hpp; sourceTree = "<group>"; };
+		2DC9C01513D7D5330034F4C4 /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game.cpp; path = ../game.cpp; sourceTree = "<group>"; };
+		2DC9C01613D7D5330034F4C4 /* game.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = game.hpp; path = ../game.hpp; sourceTree = "<group>"; };
+		2DC9C01713D7D5330034F4C4 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../main.cpp; sourceTree = "<group>"; };
+		2DC9C01813D7D5330034F4C4 /* paddle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = paddle.cpp; path = ../paddle.cpp; sourceTree = "<group>"; };
+		2DC9C01913D7D5330034F4C4 /* paddle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = paddle.hpp; path = ../paddle.hpp; sourceTree = "<group>"; };
+		A01FB6A90F07CF6E000AAC7B /* Pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pong.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A01FB6AC0F07CF6E000AAC7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A01FB6CA0F07CFF2000AAC7B /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "/Library/Frameworks/sfml-graphics.framework"; sourceTree = "<absolute>"; };
+		A01FB6CB0F07CFF2000AAC7B /* sfml-system.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-system.framework"; path = "/Library/Frameworks/sfml-system.framework"; sourceTree = "<absolute>"; };
+		A01FB6CC0F07CFF2000AAC7B /* sfml-window.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-window.framework"; path = "/Library/Frameworks/sfml-window.framework"; sourceTree = "<absolute>"; };
+		A01FB6CD0F07CFF2000AAC7B /* SFML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFML.framework; path = /Library/Frameworks/SFML.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A01FB6A70F07CF6E000AAC7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01FB6CE0F07CFF2000AAC7B /* sfml-graphics.framework in Frameworks */,
+				A01FB6CF0F07CFF2000AAC7B /* sfml-system.framework in Frameworks */,
+				A01FB6D00F07CFF2000AAC7B /* sfml-window.framework in Frameworks */,
+				2D64394B13DBC65A00AC0D8C /* sfml-audio.framework in Frameworks */,
+				2D64394C13DBC65A00AC0D8C /* sndfile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A01FB69A0F07CF63000AAC7B = {
+			isa = PBXGroup;
+			children = (
+				A01FB6B20F07CF80000AAC7B /* Sources */,
+				A01FB6B10F07CF7C000AAC7B /* Resources */,
+				A01FB6B00F07CF75000AAC7B /* Frameworks */,
+				A01FB6AA0F07CF6E000AAC7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A01FB6AA0F07CF6E000AAC7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A01FB6A90F07CF6E000AAC7B /* Pong.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A01FB6B00F07CF75000AAC7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D64394913DBC65A00AC0D8C /* sfml-audio.framework */,
+				2D64394A13DBC65A00AC0D8C /* sndfile.framework */,
+				A01FB6CD0F07CFF2000AAC7B /* SFML.framework */,
+				A01FB6CB0F07CFF2000AAC7B /* sfml-system.framework */,
+				A01FB6CC0F07CFF2000AAC7B /* sfml-window.framework */,
+				A01FB6CA0F07CFF2000AAC7B /* sfml-graphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A01FB6B10F07CF7C000AAC7B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2DA28A1C13DBAD0400797E58 /* wiki_reasonably_small.png */,
+				2D64394513DBC63400AC0D8C /* PressStart2P.ttf */,
+				2D64394613DBC63400AC0D8C /* wallHit.wav */,
+				2D64394213DBC61000AC0D8C /* paddleHit.wav */,
+				A01FB6AC0F07CF6E000AAC7B /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A01FB6B20F07CF80000AAC7B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2DC9C00E13D7D5330034F4C4 /* ai.cpp */,
+				2DC9C00F13D7D5330034F4C4 /* ai.hpp */,
+				2DC9C01013D7D5330034F4C4 /* ball.cpp */,
+				2DC9C01113D7D5330034F4C4 /* ball.hpp */,
+				2DC9C01213D7D5330034F4C4 /* config.hpp */,
+				2DC9C01413D7D5330034F4C4 /* entity.hpp */,
+				2DC9C01513D7D5330034F4C4 /* game.cpp */,
+				2DC9C01613D7D5330034F4C4 /* game.hpp */,
+				2DC9C01713D7D5330034F4C4 /* main.cpp */,
+				2DC9C01813D7D5330034F4C4 /* paddle.cpp */,
+				2DC9C01913D7D5330034F4C4 /* paddle.hpp */,
+				2DC9C00313D7D5270034F4C4 /* sGame.cpp */,
+				2DC9C00413D7D5270034F4C4 /* sGame.hpp */,
+				2D692E8713D86F79003D902B /* sEnd.cpp */,
+				2D692E8A13D86F8E003D902B /* sEnd.hpp */,
+				2DC9C00813D7D5270034F4C4 /* sTitle.cpp */,
+				2DC9C00913D7D5270034F4C4 /* sTitle.hpp */,
+				2DC9C00513D7D5270034F4C4 /* state.hpp */,
+				2DC9C00613D7D5270034F4C4 /* StateManager.cpp */,
+				2DC9C00713D7D5270034F4C4 /* StateManager.hpp */,
+				2DC9C00A13D7D5270034F4C4 /* toolbox.hpp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A01FB6A80F07CF6E000AAC7B /* Pong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A01FB6AF0F07CF6F000AAC7B /* Build configuration list for PBXNativeTarget "Pong" */;
+			buildPhases = (
+				A01FB6A50F07CF6E000AAC7B /* Resources */,
+				A01FB6A60F07CF6E000AAC7B /* Sources */,
+				A01FB6A70F07CF6E000AAC7B /* Frameworks */,
+				A0072AF00F1D0EDD00B4A594 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pong;
+			productName = Pong;
+			productReference = A01FB6A90F07CF6E000AAC7B /* Pong.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A01FB69C0F07CF63000AAC7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
+			buildConfigurationList = A01FB69F0F07CF63000AAC7B /* Build configuration list for PBXProject "Pong" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = A01FB69A0F07CF63000AAC7B;
+			productRefGroup = A01FB6AA0F07CF6E000AAC7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A01FB6A80F07CF6E000AAC7B /* Pong */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A01FB6A50F07CF6E000AAC7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA28A1D13DBAD0400797E58 /* wiki_reasonably_small.png in Resources */,
+				2D64394313DBC61000AC0D8C /* paddleHit.wav in Resources */,
+				2D64394713DBC63400AC0D8C /* PressStart2P.ttf in Resources */,
+				2D64394813DBC63400AC0D8C /* wallHit.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A01FB6A60F07CF6E000AAC7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DC9C00B13D7D5270034F4C4 /* sGame.cpp in Sources */,
+				2DC9C00C13D7D5270034F4C4 /* StateManager.cpp in Sources */,
+				2DC9C00D13D7D5270034F4C4 /* sTitle.cpp in Sources */,
+				2DC9C01A13D7D5330034F4C4 /* ai.cpp in Sources */,
+				2DC9C01B13D7D5330034F4C4 /* ball.cpp in Sources */,
+				2DC9C01D13D7D5330034F4C4 /* game.cpp in Sources */,
+				2DC9C01E13D7D5330034F4C4 /* main.cpp in Sources */,
+				2DC9C01F13D7D5330034F4C4 /* paddle.cpp in Sources */,
+				2D692E8813D86F79003D902B /* sEnd.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A01FB69D0F07CF63000AAC7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		A01FB69E0F07CF63000AAC7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		A01FB6AD0F07CF6F000AAC7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = Pong;
+			};
+			name = Debug;
+		};
+		A01FB6AE0F07CF6F000AAC7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = Pong;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A01FB69F0F07CF63000AAC7B /* Build configuration list for PBXProject "Pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A01FB69D0F07CF63000AAC7B /* Debug */,
+				A01FB69E0F07CF63000AAC7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A01FB6AF0F07CF6F000AAC7B /* Build configuration list for PBXNativeTarget "Pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A01FB6AD0F07CF6F000AAC7B /* Debug */,
+				A01FB6AE0F07CF6F000AAC7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A01FB69C0F07CF63000AAC7B /* Project object */;
+}
