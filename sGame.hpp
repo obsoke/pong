@@ -16,6 +16,7 @@ public:
 private:
 	sf::String score1;
 	sf::String score2;
+    sf::Font MyFont;
 	Paddle player1;
 	AI player2;
 	Ball ball;	

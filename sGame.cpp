@@ -14,10 +14,15 @@ sGame::sGame(sf::RenderWindow& app) :
 	ball.SetColor(sf::Color(255,0,0,255));
 
 	// set strings
+    if(!MyFont.LoadFromFile("PressStart2P.ttf"))
+        return;
+       
 	score1.SetText(Toolbox::itos(player1.getScore()));
 	score1.SetPosition(5, 0);
+    score1.SetFont(MyFont);
 	score2.SetText(Toolbox::itos(player2.getScore()));
-	score2.SetPosition(screenWidth - 20, 0);
+	score2.SetPosition(screenWidth - 30, 0);
+    score2.SetFont(MyFont);
 }
 
 sGame::~sGame()
