@@ -17,7 +17,7 @@ sTitle::sTitle(sf::RenderWindow& app) :
 	title.SetColor(sf::Color(0,255,0,255));
 	
 	// press return
-	pressReturn.SetText("Press Enter to play");
+	pressReturn.SetText("Press return to play");
 	pressReturn.SetFont(MyFont);
 	pressReturn.SetPosition(screenWidth / 2 - 260, 400);
 	
