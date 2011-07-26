@@ -14,11 +14,6 @@ Usage
 ---------
 The included resource files (PressStart2P.ttf, paddleHit.wav, wallHit.wav) must be in the same folder as your executable for the program to work correctly.
 
-To Do
---------
-* Add sound effects and music
-* Code clean-up and organization
-
 License
 --------
 There is no licence! Use this code however you wish.
