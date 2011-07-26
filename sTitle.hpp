@@ -13,7 +13,6 @@ public:
 private:
 	sf::Font MyFont;
 	sf::String title;
-	sf::String author;
 	sf::String pressReturn;
 	
 };

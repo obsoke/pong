@@ -16,11 +16,6 @@ sTitle::sTitle(sf::RenderWindow& app) :
 	title.SetPosition(screenWidth / 2 - 100, 100);
 	title.SetColor(sf::Color(0,255,0,255));
 	
-	// author
-	author.SetText("Coded by Dale Karp");
-	author.SetFont(MyFont);
-	author.SetPosition(screenWidth / 2 - 250, 200);
-	
 	// press return
 	pressReturn.SetText("Press Enter to play");
 	pressReturn.SetFont(MyFont);
@@ -37,7 +32,6 @@ void sTitle::Draw()
 {
 	app.Clear();
 	app.Draw(title);
-	app.Draw(author);
 	app.Draw(pressReturn);
 	app.Display();
 }
